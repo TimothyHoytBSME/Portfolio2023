@@ -1,6 +1,6 @@
 {
   "name": "timhoyt.net",
-  "homepage": "timhoyt.net",
+  "homepage": "./",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
