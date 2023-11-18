@@ -5,48 +5,41 @@
   --max-info-width: 127vh;
 }
 
-/* ===== Scrollbar CSS ===== */
-  /* Firefox */
-  * {
-    scrollbar-width: 12px;
-    scrollbar-color: var(--secondary-bg-color) var(--main-bg-color);
-  }
+* {
+  scrollbar-width: 12px;
+  scrollbar-color: var(--secondary-bg-color) var(--main-bg-color);
+}
 
-  *::-webkit-scrollbar {
-    width: 12px;
-    height: 12px;
-  }
+*::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
 
-  *::-webkit-scrollbar-track {
-    background: black;
-  }
+*::-webkit-scrollbar-track {
+  background: black;
+}
 
-  *::-webkit-scrollbar-thumb {
-    background-color: var(--secondary-bg-color);
-    border-radius: 10px;
-    border: 1px solid var(--border-color);
-  }
+*::-webkit-scrollbar-thumb {
+  background-color: var(--secondary-bg-color);
+  border-radius: 10px;
+  border: 1px solid var(--border-color);
+}
 
-
-
-/* *:focus:not(.focus-visible) {
-  outline: solid 0.4vh var(--border-color);
-  outline-offset: -1px;
-  border: solid 1px blue;
-} */
+h1{
+  font-size: 1em;
+}
 
 a{
   color: var(--border-color);
 }
 
 .noselect {
-  -webkit-touch-callout: none; /* iOS Safari */
-    -webkit-user-select: none; /* Safari */
-     -khtml-user-select: none; /* Konqueror HTML */
-       -moz-user-select: none; /* Old versions of Firefox */
-        -ms-user-select: none; /* Internet Explorer/Edge */
-            user-select: none; /* Non-prefixed version, currently
-                                  supported by Chrome, Edge, Opera and Firefox */
+  -webkit-touch-callout: none; 
+  -webkit-user-select: none; 
+  -khtml-user-select: none; 
+  -moz-user-select: none; 
+  -ms-user-select: none; 
+  user-select: none; 
 }
 
 .app {
@@ -80,11 +73,16 @@ a{
   -webkit-animation: AnimationName 50s ease infinite;
   -moz-animation: AnimationName 50s ease infinite;
   animation: AnimationName 50s ease infinite;
+
+  transition: font-size 0.2s;
+}
+
+.name:hover{
+  font-size: 5.2vh;
 }
 
 .contact-options{
   position: relative;
-  /* background-color: blue; */
   display: flex;
   justify-content: space-around;
   width: 100%;
@@ -95,26 +93,28 @@ a{
 }
 
 .contact-option{
-  /* background-color: green; */
-  
   width: fit-content;
+  height: 4vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   font-size: 2vh;
   font-style: inherit;
-  font-weight: 300;
+  font-weight: 500;
   font-family: 'Courier New', Courier, monospace;
   cursor: pointer;
   margin-right: 3vh;
   text-decoration: none;
+  transition: all 0.2s;
+}
+
+.contact-option:hover{
+  font-size: 2.5vh;
 }
 
 .contact-icon{
   max-height: 1.4em;
-  /* margin-right: 1vh; */
-  
 }
 
 .emailimg{
@@ -126,7 +126,6 @@ a{
   border: none;
   color: inherit;
 }
-
 
 .contactform{
   position: absolute;
@@ -211,13 +210,13 @@ a{
   font-size: 2.5vh;
   text-shadow: none;
   text-align: left;
-  /* font-size: 5vh; */
 }
 
 .description{
   width: 90%;
   max-width: var(--max-info-width);
   padding-top: 16vh;
+  /* text-align: justify; */
 }
 
 .skills-icons{
@@ -245,21 +244,23 @@ a{
   
 }
 
-/* .techicon:hover{
-  
-} */
-
 .zoomonhover{
-  transition: transform .2s; /* Animation */
+  transition: transform .2s; 
 }
 
 .zoomonhover:hover{
   transform: scale(1.25);
 }
 
+.projectstext{
+  font-size: 1.3em;
+  font-weight: 600;
+  margin-top: 1.5em;
+  margin-bottom: 2em;
+}
+
 .project{
   font-size: 3vh;
-  /* margin-bottom: 5vh; */
   position: relative;
 }
 
@@ -277,13 +278,25 @@ a{
   background-color: var(--main-bg-color);
   background-position: center center;
   background-image: url('./Components/Images/BZmobileV.webp');
+  display: flex;
+  justify-content: flex-end;
   
+}
+
+.clicktoexit{
+  font-size: min(2vw, 2vh);
+  background-color: black;
+  margin-right: 20%;
+  width: 10em;
+  height: 4em;
+  text-align: center;
+  text-justify: center;
+  line-height: 4em;
 }
 
 .github-img{
   height: 3vh;
   margin-left: 20px;
-  /* background-color: var(--border-color); */
   transform: translate(0, 0.5vh);
 }
 
@@ -292,26 +305,29 @@ a{
   padding-left: 0.5vh;
 }
 
+.project-title{
+  height: 4vh;
+  transition: font-size 0.2s;
+}
+
+.project-title:hover{
+  font-size: 105%;
+}
+
 .project-description{
   width: 90%;
   max-width: var(--max-info-width);
   font-size: 2.5vh;
-  /* margin-bottom: -20vh; */
 }
 
 .project-images{
   display: flex;
-  /* justify-content: left; */
   width: auto;
   max-width: 90%;
   overflow-y: hidden;
   padding-bottom: 5vh;
   padding-top: 5vh;
   padding-left: 1.5vh;
-  /* margin: -5vh; */
-  /* margin-top: -20vh; */
-  /* margin-bottom: 5vh; */
-  
 }
 
 .project-image{
@@ -320,7 +336,7 @@ a{
 }
 
 
-@media only screen and (min-width: 1000px){
+@media (orientation: landscape) and (min-width: 1000px){ /*desktop*/
   .project-images{
     max-width: 10000px;
     width: 100%;
@@ -334,7 +350,7 @@ a{
 
 }
 
-@media only screen and (min-width: 600px){
+@media (orientation: landscape){ /*any landscape*/
   .contact-options{
     width: fit-content;
     justify-content: left;
@@ -347,4 +363,58 @@ a{
   .contact-icon{
     margin-right: 1vh;
   }
+}
+
+@media (orientation: landscape) and (hover: none){ /*mobile landscape */
+  .contact-option{
+    font-size: 2vw;
+  }
+
+  .info{
+    font-size: 2vw;
+  }
+
+  .projectstext{
+    font-size: 2.5vw;
+  }
+  .project-title{
+    font-size: 2.2vw;
+  }
+
+  .project-description{
+    font-size: 2vw;
+  }
+
+  .external-link-img{
+    height: 1.5vw;
+  }
+
+  .github-img{
+    height: 1.75vw;
+    margin-left: 2.5vw;
+  }
+}
+
+@media (orientation: portrait) and (hover: none){ /*mobile portrait  */
+  .name{
+    margin-left: 0;
+    margin-right: 5vw;
+  }
+
+  .info{
+    width: 100%;
+  }
+
+  .contact-options{
+    height: 5vw;
+    width: auto;
+    margin-left: 5vw;
+    max-width: none;
+  }
+
+  .contact-option{
+    height: 5vw;
+    width: 10vw;
+  }
+
 }

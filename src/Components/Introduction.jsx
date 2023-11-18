@@ -3,7 +3,7 @@
 function Introduction(){
     return(
         <section className="description noselect">
-            Mechanical engineer, artist, and full-stack web developer.
+            <b>Mechanical engineer, artist, and full-stack web developer.</b>
             <br></br>
             <br></br>
             Various positions and projects surrounding manufacturing,

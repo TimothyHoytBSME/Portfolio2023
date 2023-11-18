@@ -16,7 +16,7 @@ function App() {
   return (
     <div className="app">
       <div onClick={()=>{setShowForm(true)}} className="name noselect">
-        TIMOTHY HOYT
+        <h1>TIMOTHY HOYT</h1>
       </div>
       <main className="info">
         <header className='contact-options'>
