@@ -393,6 +393,9 @@ a{
     height: 1.75vw;
     margin-left: 2.5vw;
   }
+  .contactform-name, .contactform-email, .contactform-message{
+    font-size: 3vh;
+  }
 }
 
 @media (orientation: portrait) and (hover: none){ /*mobile portrait  */
@@ -417,4 +420,9 @@ a{
     width: 10vw;
   }
 
-}
+  .contactform-name, .contactform-email, .contactform-message{
+    font-size: 3vw;
+  }
+  
+  
+}   
