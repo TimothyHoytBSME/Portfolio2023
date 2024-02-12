@@ -323,7 +323,7 @@ a{
 .project-images{
   display: flex;
   width: auto;
-  max-width: 90%;
+  max-width: 85%;
   overflow-y: hidden;
   padding-bottom: 5vh;
   padding-top: 5vh;
@@ -338,9 +338,9 @@ a{
 
 @media (orientation: landscape) and (min-width: 1000px){ /*desktop*/
   .project-images{
-    max-width: 10000px;
+    /* max-width: 10000px; */
     width: 100%;
-    overflow: hidden;
+    /* overflow: hidden; */
   }
 
   .project-image{

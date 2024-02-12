@@ -1,8 +1,8 @@
-import CPanel from './Icons/cpanel.svg';
+// import CPanel from './Icons/cpanel.svg';
 import Css3 from './Icons/css3.svg';
 import Node from './Icons/node.svg';
 import Html5 from './Icons/html5.svg';
-import MySq from './Icons/mysql.svg';
+// import MySq from './Icons/mysql.svg';
 import Pyth from './Icons/python.svg';
 import Reac from './Icons/react.svg';
 import Javascript from './Icons/javascript.svg';
@@ -31,12 +31,12 @@ function Tech() {
             <a className="techicon-link" href="https://www.python.org/" target="_blank" rel="noopener noreferrer">
                 <img  className="techicon zoomonhover" src={Pyth} alt="Python" title="Python"/>
             </a>
-            <a className="techicon-link" href="https://mysql.com/" target="_blank" rel="noopener noreferrer">
+            {/* <a className="techicon-link" href="https://mysql.com/" target="_blank" rel="noopener noreferrer">
                 <img  className="techicon zoomonhover" src={MySq} alt="MySQL" title="MySQL"/>
             </a>
             <a className="techicon-link" href="https://cpanel.net/" target="_blank" rel="noopener noreferrer">
                 <img  className="techicon zoomonhover" src={CPanel} alt="CPanel" title="CPanel"/>
-            </a>
+            </a> */}
             <a className="techicon-link" href="https://playcanvas.com/" target="_blank" rel="noopener noreferrer">
                 <img  className="techicon zoomonhover" src={PlayC} alt="Playcanvas" title="Playcanvas"/>
             </a>

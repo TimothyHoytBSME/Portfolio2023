@@ -15,6 +15,13 @@ import ME1 from './Images/MEmobileV.webp';
 import ME2 from './Images/MEmobileH.webp';
 import ME3 from './Images/MEdesktop.webp';
 
+import RB1 from './Images/RBmobileV1.webp';
+import RB2 from './Images/RBmobileV2.webp';
+import RB3 from './Images/RBmobileV3.webp';
+import RB4 from './Images/RBmobileH1.webp';
+import RB5 from './Images/RBmobileH2.webp';
+import RB6 from './Images/RBdesktop.webp';
+
 import SWA1 from './Images/SWAmobileV.webp';
 import SWA2 from './Images/SWAmobileH.webp';
 import SWA3 from './Images/SWAdesktop.webp';
@@ -60,6 +67,29 @@ function Projects(){
 
             <div className="project">
               <div className="project-title noselect">
+                <a className="project-link" href="https://runebattle.com" target="_blank" rel="noopener noreferrer">
+                    RuneBattle.com 
+                    <img className='external-link-img' src={EXTERNAL} alt='external link' title='RuneBattle.com' />
+                </a>
+              </div>
+              <br></br>
+              <div className="project-description noselect">
+                A free, turn-based, cross-compatible, web-game based around magical runes. Vanilla HTML, JavaScript, and CSS using Firebase backend.
+              </div>
+              <div className='project-images'>
+                <img onClick={()=>{handlePopup(RB1)}} className="project-image zoomonhover" src={RB1} alt="mobile vertical 1" title="Mobile Vertical 1"/>
+                <img onClick={()=>{handlePopup(RB2)}} className="project-image zoomonhover" src={RB2} alt="mobile vertical 2" title="Mobile Vertical 2"/>
+                <img onClick={()=>{handlePopup(RB3)}} className="project-image zoomonhover" src={RB3} alt="mobile vertical 3" title="Mobile Vertical 3"/>
+                <img onClick={()=>{handlePopup(RB4)}} className="project-image zoomonhover" src={RB4} alt="mobile horizontal 1" title="Mobile Horizontal 1"/>
+                <img onClick={()=>{handlePopup(RB5)}} className="project-image zoomonhover" src={RB5} alt="mobile horizontal 2" title="Mobile Horizontal 2"/>
+                <img onClick={()=>{handlePopup(RB6)}} className="project-image zoomonhover" src={RB6} alt="desktop" title="Desktop"/>
+              </div>
+            </div>
+            <br></br>
+            <br></br>
+
+            <div className="project">
+              <div className="project-title noselect">
                 <a className="project-link" href="https://mccarthyelectricinc.com/dev" target="_blank" rel="noopener noreferrer">
                     Mccarthyelectricinc.com 
                     <img className='external-link-img' src={EXTERNAL} alt='external link' title='McCarthy Electric Inc.' />
@@ -75,7 +105,7 @@ function Projects(){
               <div className='project-images'>
                 <img onClick={()=>{handlePopup(ME1)}} className="project-image zoomonhover" src={ME1} alt="mobile vertical" title="Mobile Vertical"/>
                 <img onClick={()=>{handlePopup(ME2)}} className="project-image zoomonhover" src={ME2} alt="mobile horizontal" title="Mobile Horizontal"/>
-                <img onClick={()=>{handlePopup(ME3)}} className="project-image zoomonhover" src={ME3} alt="mobile desktop" title="Mobile Desktop"/>
+                <img onClick={()=>{handlePopup(ME3)}} className="project-image zoomonhover" src={ME3} alt="desktop" title="Desktop"/>
               </div>
             </div>
             <br></br>
