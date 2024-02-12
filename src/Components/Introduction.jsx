@@ -13,10 +13,10 @@ function Introduction(){
             websites, and games. 
             <br></br>
             <br></br>
-            Primary technologies are React, Javascript, HTML, CSS, NodeJS, Python, and Playcanvas. 
+            Primary technologies are React, Javascript, HTML, CSS, NodeJS, Python, and PlayCanvas. 
             Some experience with C, VBA, VB, C#,
-            PHP, Postgres, mySQL cPanel, SSH, Encryption, APIs, Tailwind, Bootstrap,
-            WordPress, Matlab, and Simulink. Additional experience
+            PHP, Postgres, MySQL cPanel, SSH, Encryption, APIs, Tailwind, Bootstrap,
+            WordPress, MATLAB, and Simulink. Additional experience
             with, 2D and 3D graphics, design, and AI.
         </section>
     )
